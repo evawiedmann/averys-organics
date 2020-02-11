@@ -1,0 +1,9 @@
+.cardHeader {
+  background-color: #77B28C;
+  color: white;
+  border-bottom: 1px solid #1D3F29;
+}
+.wholeCard {
+  border: 1px solid #1D3F29;
+  margin: 8px;
+}

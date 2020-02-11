@@ -1,18 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Selection from './Selection'
-import { Card, ListGroup } from 'react-bootstrap';
+import { Card, ListGroup, Accordion } from 'react-bootstrap';
+import '../Month.css'
 
 function Month(props){
   return (
     <div>
-      <Card style={{ width: '18rem' }}>
-        <Card.Header>{props.month}</Card.Header>
+    <Accordion >
+      <Card className="wholeCard" style={{ width: '18rem' }}>
+        <Accordion.Toggle as={Card.Header} eventKey="0" className="cardHeader">
+        {props.month}
+        </Accordion.Toggle>
+        <Accordion.Collapse eventKey="0">
         <ListGroup variant="flush">
           <ListGroup.Item>{props.selection.map((sel, i) => <li key={i}>{sel}</li>)}</ListGroup.Item>
         </ListGroup>
+        </Accordion.Collapse>
       </Card>
-      <br/>
+      </Accordion>
     </div>
   );
 }
