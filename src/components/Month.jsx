@@ -9,7 +9,7 @@ function Month(props){
       <Card style={{ width: '18rem' }}>
         <Card.Header>{props.month}</Card.Header>
         <ListGroup variant="flush">
-          <ListGroup.Item>{props.selection}</ListGroup.Item>
+          <ListGroup.Item>{props.selection.map((sel, i) => <li key={i}>{sel}</li>)}</ListGroup.Item>
         </ListGroup>
       </Card>
       <br/>

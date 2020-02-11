@@ -1,5 +1,6 @@
 import React from 'react'
 import Month from './Month'
+import Selection from './Selection'
 
 const availableProduce = [
    {
@@ -275,7 +276,7 @@ function AvailableProducts (){
     <div>
     {availableProduce.map((month, index) =>
       <Month month={month.month}
-      selection = {month.selection}
+      selection ={month.selection}
       key={index}/>
     )}
     </div>
