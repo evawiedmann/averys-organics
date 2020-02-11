@@ -8,11 +8,16 @@ import MarketSchedule from './components/MarketSchedule';
 
 function App() {
   return (
-    <div>
+    <div id='bodyDiv'>
 
     <Header/>
     <Container>
+    <Row>
+    <Col></Col>
+    <Col md={8}>
     <MarketSchedule/>
+    </Col>
+    </Row>
     </Container>
 
     </div>

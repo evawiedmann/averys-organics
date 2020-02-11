@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel  from 'react-bootstrap/Carousel';
-import '../App.css';
+// import '../App.css';
+import '../Carousel.css'
 import beets from '../beets-1378705_640.jpg';
 import pineapples from '../pineapples-373769_640.jpg';
 import woman from '../woman-981797_640.jpg';
@@ -13,95 +14,98 @@ import watermelon from '../watermelon-4783500_640.jpg';
 function  MarketSchedule(){
   return (
     <>
+    <div id='carouselBody'>
     <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 carouselImg"
           src={beets}
           alt="Beets"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Sundays at Lents International</h3>
+          <p>9 am to 2 pm at booth 4A</p>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 carouselImg"
           src={pineapples}
-          alt="Third slide"
+          alt="Pineapples"
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Mondays at Pioneer Courthouse Square</h3>
+          <p>10 am to 2 pm at booth 7C</p>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 carouselImg"
           src={woman}
-          alt="Third slide"
+          alt="Woman at fruit stand"
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>Tuesdays at Hillsboro</h3>
+          <p>5 pm to 8:30 pm at booth 3E</p>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 carouselImg"
           src={watermelon}
-          alt="Third slide"
+          alt="Watermelons"
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>Wednesdays at Shemanski Park</h3>
+          <p>10 am to 2 pm at booth 3E</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 carouselImg"
           src={hipster}
-          alt="Third slide"
+          alt="Two people at produce stands"
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>Thursdays at Northwest Portland</h3>
+          <p>2 pm to 6 pm at booth 6D</p>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 carouselImg"
           src={spices}
-          alt="Third slide"
+          alt="Bags of bulk spices"
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>Fridays at Cully</h3>
+          <p>10 am to 2 pm at booth 3B</p>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 carouselImg"
           src={squash}
-          alt="Third slide"
+          alt="Squash"
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3>Saturdays at Beaverton</h3>
+          <p>10 am to 1:30 pm at booth 9G</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
     </>
     );
 }
