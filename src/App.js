@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MarketSchedule from './components/MarketSchedule';
+import AvailableProducts from './components/AvailableProducts'
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
     <Header/>
     <Container>
     <Row>
-    <Col></Col>
+    <Col>
+    <AvailableProducts/>
+    </Col>
     <Col md={8}>
     <MarketSchedule/>
     </Col>
