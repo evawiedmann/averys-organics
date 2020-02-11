@@ -2,13 +2,13 @@ import React from 'react';
 import Carousel  from 'react-bootstrap/Carousel';
 // import '../App.css';
 import '../Carousel.css'
-import beets from '../beets-1378705_640.jpg';
-import pineapples from '../pineapples-373769_640.jpg';
-import woman from '../woman-981797_640.jpg';
-import hipster from '../market-4749215_640.jpg';
-import squash from '../farmers-market-1213097_640.jpg';
-import spices from '../spices-1626385_640.jpg';
-import watermelon from '../watermelon-4783500_640.jpg';
+import beets from '../assets/images/beets-1378705_640.jpg';
+import pineapples from '../assets/images/pineapples-373769_640.jpg';
+import woman from '../assets/images/woman-981797_640.jpg';
+import hipster from '../assets/images/market-4749215_640.jpg';
+import squash from '../assets/images/farmers-market-1213097_640.jpg';
+import spices from '../assets/images/spices-1626385_640.jpg';
+import watermelon from '../assets/images/watermelon-4783500_640.jpg';
 
 
 function  MarketSchedule(){

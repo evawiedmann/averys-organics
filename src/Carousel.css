@@ -9,3 +9,11 @@
   width: auto;
   border-radius: 12px;
 }
+
+.carousel-control-next-icon {
+  background-color: blue;
+}
+
+.carousel-control-prev-icon {
+  background-color: blue;
+}
