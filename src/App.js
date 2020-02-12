@@ -5,23 +5,22 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MarketSchedule from './components/MarketSchedule';
+import Home from './components/Home';
+import NewMarketScheduleForm from './components/NewMarketScheduleForm';
 import AvailableProducts from './components/AvailableProducts'
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div id='bodyDiv'>
 
     <Header/>
-    <Container>
-    <Row>
-    <Col>
-    <AvailableProducts/>
-    </Col>
-    <Col md={8}>
-    <MarketSchedule/>
-    </Col>
-    </Row>
-    </Container>
+    <Switch>
+       <Route exact path='/' component={Home} />
+       <Route path='/availableproducts' component={AvailableProducts} />
+       <Route path='/marketschedule' component={MarketSchedule} />
+       <Route path='/newmarketschedule' component={NewMarketScheduleForm} />
+     </Switch>
 
     </div>
   );

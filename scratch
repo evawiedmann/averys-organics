@@ -1,0 +1,25 @@
+function App() {
+  return (
+    <div id='bodyDiv'>
+
+    <Header/>
+    <Switch>
+       <Route exact path='/' component={MarketSchedule} />
+       <Route path='/newmarketschedule' component={NewMarketScheduleForm} />
+     </Switch>
+    <Container>
+    <Row>
+    <Col>
+    <AvailableProducts/>
+    </Col>
+    <Col md={8}>
+    <MarketSchedule/>
+    </Col>
+    </Row>
+    </Container>
+
+    </div>
+  );
+}
+
+export default App;
