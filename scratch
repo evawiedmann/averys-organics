@@ -23,3 +23,28 @@ function App() {
 }
 
 export default App;
+
+
+
+background: rgb(55,119,78);
+background: linear-gradient(270deg, rgba(55,119,78,1) 0%, rgba(141,147,128,1) 25%, rgba(198,113,85,1) 69%);
+
+
+
+.clip-text-maybe {
+
+  /* if we can clip, do it */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  /* what will show through the text
+      ~ or ~
+     what will be the background of that element */
+  background: whatever;
+
+  /* fallback text color
+      ~ or ~
+     the actual color of text, so it better work on the background */
+  color: red;
+
+}
