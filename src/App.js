@@ -9,6 +9,7 @@ import Home from './components/Home';
 import NewMarketScheduleForm from './components/NewMarketScheduleForm';
 import AvailableProducts from './components/AvailableProducts'
 import { Switch, Route } from 'react-router-dom';
+import Error404 from './components/Error404';
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
 
     <Header/>
     <Switch>
-       <Route exact path='/' component={Home} />
+       <Route exact path='/home' component={Home} />
        <Route path='/availableproducts' component={AvailableProducts} />
        <Route path='/marketschedule' component={MarketSchedule} />
        <Route path='/newmarketschedule' component={NewMarketScheduleForm} />
+       <Route component={Error404} />
      </Switch>
 
     </div>
